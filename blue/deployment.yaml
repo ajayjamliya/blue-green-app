@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: app-container
-        image: dockerforbegin/iciciproject:stable
+        image: dockerforbegin/iciciproject:v1
         ports:
         - containerPort: 80
         resources:
