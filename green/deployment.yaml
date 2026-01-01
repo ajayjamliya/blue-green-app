@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: app-container
-        image: nginx:1.22
+        image: dockerforbegin/iciciproject:stable
         ports:
         - containerPort: 80
         resources:
