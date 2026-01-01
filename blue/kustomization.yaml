@@ -6,5 +6,5 @@ resources:
 
 images:
   - name: nginx
-    newName: myrepo/custom-nginx
-    newTag: "1.25"
+    newName: dockerforbegin/iciciproject
+    newTag: "v1"
