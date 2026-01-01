@@ -6,5 +6,5 @@ resources:
 
 images:
   - name: nginx
-    newName: myrepo/green-nginx
-    newTag: "1.22"
+    newName: dockerforbegin/iciciproject:stable
+    newTag: "v2"
