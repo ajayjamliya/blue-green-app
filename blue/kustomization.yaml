@@ -1,10 +1,9 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
 
-resources:
-  - deployment.yaml
-
-images:
-  - name: nginx
-    newName: dockerforbegin/iciciproject
-    newTag: "v1"
+patches:
+  - target:
+      kind: Deployment
+      name: green-app
+    patch: |-
+      - op: replace
+        path: /spec/template/spec/containers/0/image
+        value: dockerforbegin/iciciproject:v1
